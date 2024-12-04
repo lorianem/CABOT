@@ -40,10 +40,14 @@ sudo apt update
 
 
 ```bash
-sudo add-apt-repository ppa:deadsnakes/ppa
+cd /usr/src
+sudo wget https://www.python.org/ftp/python/3.8.9/Python-3.8.9.tgz
+sudo tar xzf Python-3.8.9.tgz
+cd Python-3.8.9
 ```
 ``` bash
-sudo apt install python3.8.9 -y
+sudo ./configure --enable-optimizations
+sudo make altinstall
 ```
 
 ##### Step 3 :  verfication d'installation 
