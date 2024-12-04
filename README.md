@@ -65,10 +65,10 @@ Vous devez l'installer après avoir installer la bonne version de python. Sinon 
 ![Image-erreur](https://robomaster-dev.readthedocs.io/en/latest/_images/pip_install_error.jpg)
 
 ```bash
-python3.8 pip install robomaster
+python3.8 -m pip install robomaster
 ```
 ```bash 
-python3.8 pip install --upgrade robomaster
+python3.8 -m pip install --upgrade robomaster
 ```
 
 
