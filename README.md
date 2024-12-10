@@ -128,3 +128,55 @@ Si le robot n'est pas à votre disposition :
 ros2 run test test
 ```
 
+
+installer venv
+
+```bash
+sudo apt install python3-serial
+```
+
+```bash
+python3.8 -m pip install -U pyserial
+```
+
+```bash
+python3.8 -m pip install -U --user pyserial
+```
+
+```bash
+mkdir -p ~/colcon_venv/src
+cd ~/colcon_venv/
+```
+
+```bash
+Make a virtual env and activate it 
+virtualenv -p python3.8 ./venv
+source ./venv/bin/activate
+# Make sure that colcon doesn’t try to build the venv
+touch ./venv/COLCON_IGNORE
+```
+
+```bash
+python3.8 -m pip install robomaster
+```
+
+```bash
+cd src
+ros2 pkg create --build-type ament_python --license Apache-2.0 --node-name com dji
+```
+
+```bash
+Source Humble and build
+source /opt/ros/humble/setup.bash
+colcon build
+```
+
+```bash
+source install/setup.sh 
+```
+
+```bash
+ros2 run dji com 
+```
+
+
